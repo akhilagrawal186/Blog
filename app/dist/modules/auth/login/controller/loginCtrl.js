@@ -1,0 +1,1 @@
+"use strict";function LoginCtrl(a,b,c){var d,e=this;e.login=function(){var f=a.loginAuth();f.then(function(a){d=a.isAuthenticate,d&&(b.isAuthenticated=!0,b.userName=e.username,c.go("home",{userId:e.username}))})}}angular.module("driveAppApp").controller("LoginCtrl",LoginCtrl),LoginCtrl.$inject=["LoginSrvc","$sessionStorage","$state","$scope"];

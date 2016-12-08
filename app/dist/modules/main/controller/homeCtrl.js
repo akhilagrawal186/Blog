@@ -1,0 +1,1 @@
+"use strict";angular.module("driveAppApp").controller("HomeCtrl",function(){var a=this;a.msg="TO DO MAIN PAGE"});

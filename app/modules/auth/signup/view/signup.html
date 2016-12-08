@@ -1,0 +1,68 @@
+<div class="container auth-page">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12 offset-sm-3">
+      <div class="card">
+        <div class="card-header text-lg-center">
+          <h3 class="card-title">Signup Here</h3>
+        </div>
+        <div class="card-block">
+          <form name="signupForm" ng-submit="login.register()" novalidate>
+            <md-input-container class="md-block">
+              <label>Your fullname</label>
+              <input type="text" name="fullname" ng-model="login.password" required/>
+              <div ng-messages="signupForm.fullname.$error" role="alert">
+                <div ng-message="required">Your fullname is required.</div>
+              </div>
+            </md-input-container>
+            <md-input-container class="md-block">
+              <label>Enter your email id</label>
+              <input required type="email" name="email" ng-model="signup.username" ng-pattern="/^.+@.+\..+$/"/>
+              <div ng-messages="signupForm.email.$error" role="alert">
+                <div ng-message="required">Email is required.</div>
+                <div ng-message="pattern">Enter a valid email.</div>
+              </div>
+            </md-input-container>
+            <md-input-container class="md-block">
+              <label>Choose your password</label>
+              <input type="password" name="password" ng-model="signup.password" required/>
+              <div ng-messages="signupForm.password.$error" role="alert">
+                <div ng-message="required">Password is required.</div>
+              </div>
+            </md-input-container>
+            <div layout="row">
+              <md-input-container flex="30">
+                <label>Country</label>
+                <md-select name="code" ng-init="ind" ng-model="country.code" required>
+                  <md-option value="ind">+91 IND</md-option>
+                  <md-option value="usa">+1 USA</md-option>
+                </md-select>
+              </md-input-container>
+              <md-input-container flex="70">
+                <label>Your mobile number</label>
+                <input type="text" name="phoneNumber" ng-model="signup.phoneNumber" required ng-pattern="/^(\+\d{1,3}[- ]?)?\d{10}$/"/>
+                <div ng-messages="signupForm.phoneNumber.$error" role="alert">
+                  <div ng-message="required">Password is required.</div>
+                  <div ng-message="pattern">Enter valid phone number.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <!-- <md-input-container class="md-block">
+              <label>Enter your password</label>
+              <input type="password" name="password" ng-model="login.password" required/>
+              <div ng-messages="signupForm.password.$error" role="alert">
+                <div ng-message="required">Password is required.</div>
+              </div>
+            </md-input-container> -->
+
+            <button type="submit" class="btn btn-outline-success btn-block" ng-disabled="signupForm.$invalid">Register Now</button>
+            <br>
+            <div class="card-text">
+              <a ui-sref="login" class="btn btn-link pull-sm-left">Already registered? Login now</a>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
