@@ -1,1 +1,0 @@
-"use strict";function LoginSrvc(a){var b=this;b.loginAuth=function(){return a.get("data/authenticate.json").then(function(a){return a.data})}}angular.module("driveAppApp").service("LoginSrvc",LoginSrvc),LoginSrvc.$inject=["$http"];
