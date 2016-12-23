@@ -3,7 +3,7 @@
 describe('Controller: MainCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('driveAppApp'));
+  beforeEach(module('blogAngular2App'));
 
   var MainCtrl,
     scope;
