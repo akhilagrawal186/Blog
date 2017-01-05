@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name blogAngular2App
+ * @name blogWorkApp
  * @description
- * # blogAngular2App
+ * # blogWorkApp
  *
  * Main module of the application.
  */
 angular
-  .module('blogAngular2App', [
+  .module('blogWorkApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -17,26 +17,19 @@ angular
     'ngTouch',
     'ui.router'
   ])
-  .config(function ($stateProvider,$urlRouterProvider) {
-    $urlRouterProvider.otherwise('/dashboard');
+  .config(['$stateProvider','$urlRouterProvider',function ($stateProvider, $urlRouterProvider) {
+      $urlRouterProvider.otherwise("dashboard");
     $stateProvider
       .state('dashboard', {
-        url:'/dashboard',
-        templateUrl: 'views/main.html'
+          url: '/dashboard',
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
       })
       .state('about', {
-        url:'/about',
-        templateUrl: 'views/about.html'
-
+          url:'/about',
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl',
+        controllerAs: 'about'
       });
-      // .state('/about', {
-      //   templateUrl: 'views/about.html',
-      //   controller: 'AboutCtrl',
-      //   controllerAs: 'about'
-      // })
-      // .otherwise({
-      //   url:"uuuu",
-      //   templateUrl: 'views/about.html'
-      // });
-
-  });
+  }]);
