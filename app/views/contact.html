@@ -1,21 +1,21 @@
 <div ng-controller="ContactCtrl" class="container">
     <H2>Contact Form</H2>
     <form class="" name="contactForm" novalidate="">
-        <div class="form-group" ng-class="{'has-success':contactForm.name.$valid}">
+        <div class="form-group" ng-class="{'has-success':contactForm.Name.$valid, 'has-error':contactForm.Name.$error.required}">
             <labe>Your Name</labe>
-            <input type="text" ng-model="contactForm.name" class="form-control" placeholder="Enter Name" required="">
+            <input type="text" name="Name" ng-model="contactForm.name" class="form-control" placeholder="Enter Name" required="" class="form-control">
         </div>
-        <div class="form-group"  ng-class="{'has-success':contactForm.name.$valid}">
+        <div class="form-group"  ng-class="{'has-success':contactForm.Email.$valid, 'has-error': contactForm.Email.$error.required}">
             <labe>Email</labe>
-            <input type="text" ng-model="contactForm.email" class="form-control" placeholder="Enter Email" required="">
+            <input type="text" name="Email" ng-model="contactForm.email" class="form-control" placeholder="Enter Email" required="" class="form-control">
         </div>
-        <div class="form-group" ng-class="{'has-success':contactForm.name.$valid}">
+        <div class="form-group" ng-class="{'has-success':contactForm.Subject.$valid, 'has-error': contactForm.Subject.$error.required}">
             <labe>Subject</labe>
-            <input type="text" ng-model="contactForm.subject" class="form-control" placeholder="Enter Subject">
+            <input type="text" name="Subject" ng-model="contactForm.subject" class="form-control" placeholder="Enter Subject" class="form-control">
         </div>
-        <div class="form-group" ng-class="{'has-success':contactForm.name.$valid}">
+        <div class="form-group" ng-class="{'has-success':contactForm.Message.$valid, 'has-error': contactForm.Message.$error.required}">
             <labe>Your Message</labe>
-            <input type="text" ng-model="contactForm.message" class="form-control" placeholder="Enter Message" required="">
+            <input type="textarea" name="Message" ng-model="contactForm.message" class="form-control" placeholder="Enter Message" required="" class="form-control">
         </div>
         <div class="form-group">
             <button ng-click="contactRequest(contactForm)" class="pull-right">Send</button>
