@@ -10,9 +10,10 @@
     <div class="col-sm-8">
         <div class="col-sm-5 tiles" ng-repeat="t in tiles track by $index" ng-class="{space: ($index+1)%2 === 0}">
             <div>{{t.date}}</div>
-            <div><h4>{{t.title}}</h4></div>
+            <div><a href="" ui-serf=""><h4>{{t.title}}</h4></a></div>
             <div>{{t.description}}</div>
         </div>
+        <!-- <div ui-view></div> -->
     </div>
     <div class="col-sm-2">
         <ui>
