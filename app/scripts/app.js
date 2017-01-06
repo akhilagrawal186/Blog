@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-angular
+var app=angular
   .module('blogWorkApp', [
     'ngAnimate',
     'ngCookies',
@@ -38,3 +38,27 @@ angular
         controllerAs: 'contact'
       });
   }]);
+app.controller("deshBoardCtrl",function(){
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();
+
+// Initialize Share-Buttons
+$.contactButtons({
+  effect  : 'slide-on-scroll',
+  buttons : {
+    'facebook':   { class: 'facebook', use: true, link: 'https://www.facebook.com/akhilagrawal014', extras: 'target="_blank"' },
+    'linkedin':   { class: 'linkedin', use: true, link: 'https://www.linkedin.com/in/akhil-agrawal-7912a85b?trk=nav_responsive_tab_profile',extras: 'target="_blank"' },
+    'google':     { class: 'gplus',    use: true, link: 'https://plus.google.com/u/0/' ,extras: 'target="_blank"'},
+    'twitter':    { class: 'twitt'  ,use :true,link:'https://twitter.com/AkhilAgrawal18',extras: 'target="_blank"'},
+    'phone':      { class: 'phone separated',    use: true, link: '+000' },
+    'email':      { class: 'email',    use: true, link: 'akhilmangal186@gmail.com' }
+  }
+});
+});
