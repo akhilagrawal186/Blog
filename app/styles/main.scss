@@ -102,8 +102,30 @@ set-image {
     margin-left: auto;
     margin-right: auto;
 }
+.has-error,
 .has-success {
+    .form-control:focus {
+        box-shadow: none;
+    }
+}
+textarea.form-control {
+    height: auto !important;
+}
+.form-control {
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    -o-transition: border-color 0.3s ease-in-out;
+    -ms-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border-width: 1px;
+}
 
+.form-control:focus {
+    outline: none;
+    border-color: #009DF5;
+    border-width: 1px;
+    box-shadow: none;
 }
 //css for the social share side bar
 
