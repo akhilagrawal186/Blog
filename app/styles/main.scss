@@ -1,5 +1,5 @@
-// bower:scss
-// endbower
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/"; // bower:scss
+ // endbower
 
 .browsehappy {
   margin: 0.2em 0;
@@ -11,20 +11,17 @@
 body {
   padding: 0;
 }
-
 /* Everything but the jumbotron gets side spacing for mobile first views */
+.footer,
 .header,
-.marketing,
-.footer {
+.marketing {
   padding-left: 15px;
   padding-right: 15px;
 }
-
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
-
   /* Make the masthead heading the same height as the navigation */
   h3 {
     margin-top: 0;
@@ -33,7 +30,6 @@ body {
     padding-bottom: 19px;
   }
 }
-
 /* Custom page footer */
 .footer {
   padding-top: 19px;
@@ -44,7 +40,6 @@ body {
 .container-narrow > hr {
   margin: 30px 0;
 }
-
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
@@ -55,7 +50,6 @@ body {
     padding: 14px 24px;
   }
 }
-
 /* Supporting marketing content */
 .marketing {
   margin: 40px 0;
@@ -64,17 +58,15 @@ body {
     margin-top: 28px;
   }
 }
-
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
     max-width: 730px;
   }
-
   /* Remove the padding we set earlier */
+  .footer,
   .header,
-  .marketing,
-  .footer {
+  .marketing {
     padding-left: 0;
     padding-right: 0;
   }
@@ -87,119 +79,280 @@ body {
     border-bottom: 0;
   }
 }
-
-
-// CSS by Akhil......
-.tiles {
-    background-color: #f0f0f5;
-    margin-bottom: 20px;
+//--------- Akhil's CSS ----------------
+/*
+Credits:
+Code snippet by @maridlcrmn (Follow me on Twitter)
+Images by Nike.com (http://www.nike.com/us/en_us/)
+Logo by Sneaker-mission.com (http://www.sneaker-mission.com/)
+*/
+.navbar-brand {
+  width: 200px;
+  height: 50px;
+  background: url('http://www.sneaker-mission.com/uploads/3/1/2/7/31279819/5617441.png') no-repeat center center;
+  background-size: 50px;
 }
-.space {
+
+.nav-tabs {
+  display: inline-block;
+  border-bottom: none;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.nav-tabs > li > a,
+.nav-tabs > li > a:focus,
+.nav-tabs > li > a:hover,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  border: none;
+  border-radius: 0;
+}
+
+.nav-list {
+  border-bottom: px solid #eee;
+}
+
+.nav-list > li {
+  padding: 20px 15px 15px;
+}
+
+.nav-list > li:last-child {
+  border-right: 0 solid #eee;
+}
+
+.nav-list > li > a:hover {
+  text-decoration: none;
+}
+
+.nav-list > li > a > span {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mega-dropdown {
+  position: static !important;
+}
+
+.mega-dropdown-menu {
+  padding: 20px 15px 15px;
+  text-align: center;
+  width: 100%;
+}
+
+#login-dp {
+  min-width: 250px;
+  padding: 14px 14px 0;
+  overflow: hidden;
+  background-color: rgba(255,255,255,.8);
+}
+
+#login-dp .help-block {
+  font-size: 12px;
+}
+
+#login-dp .bottom {
+  background-color: rgba(255,255,255,.8);
+  border-top: 1px solid #ddd;
+  clear: both;
+  padding: 14px;
+}
+
+#login-dp .social-buttons {
+  margin: 12px 0;
+}
+
+#login-dp .social-buttons a {
+  width: 49%;
+}
+
+#login-dp .form-group {
+  margin-bottom: 10px;
+}
+
+.btn-fb {
+  color: #fff;
+  background-color: #3b5998;
+}
+
+.btn-fb:hover {
+  color: #fff;
+  background-color: #496ebc;
+}
+
+.btn-tw {
+  color: #fff;
+  background-color: #55acee;
+}
+
+.btn-tw:hover {
+  color: #fff;
+  background-color: #59b5fa;
+}
+@media(max-width:768px) {
+  #login-dp {
+    background-color: inherit;
+    color: #fff;
+  }
+
+  #login-dp .bottom {
+    background-color: inherit;
+    border-top: 0 none;
+  }
+}
+
+.navbar-login {
+  width: 305px;
+  padding: 10px 10px 0;
+}
+
+.navbar-login-session {
+  padding: 0 10px;
+}
+
+.icon-size {
+  font-size: 87px;
+}
+
+.navbar-brand {
+  width: 200px;
+  height: 50px;
+  background: url('http://www.sneaker-mission.com/uploads/3/1/2/7/31279819/5617441.png') no-repeat center center;
+  background-size: 50px;
+  padding-top: 7px;
+}
+
+.navbar-nav {
+  padding-left: 15px;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #00486c;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.header-bgcolor {
+    background-color: #334f6f;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: white;
+  background-color: #428bca;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  list-style: none;
+  background-color: white;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.14902);
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.172549) 0 6px 12px;
+}
+
+.nav-list > li {
+  padding: 20px 15px 15px;
+  border-left: 0;
+
+  .nav-list {
+    border-bottom: 0;
+  }
+
+  .nav-tabs > li.active > a,
+  .nav-tabs > li.active > a:focus,
+  .nav-tabs > li.active > a:hover {
+    color: white;
+    cursor: default;
+    background-color: #428bca;
+  }
+
+  .nav-tabs > li.active > a,
+  .nav-tabs > li.active > a:focus,
+  .nav-tabs > li.active > a:hover {
+    color: black;
+    cursor: default;
+    background-color: rgb(255, 255, 255);
+    border: solid black 1px;
+  }
+
+  body {
+    padding-top: 20px;
+  }
+
+  #myCarousel .nav a small {
+    display: block;
+  }
+
+  #myCarousel .nav {
+    background: #eee;
+  }
+
+  .nav-justified > li > a {
+    border-radius: 0;
+  }
+
+  .nav-pills > li[data-slide-to="0"].active a {
+    background-color: #16a085;
+  }
+
+  .nav-pills > li[data-slide-to="1"].active a {
+    background-color: #e67e22;
+  }
+
+  .nav-pills > li[data-slide-to="2"].active a {
+    background-color: #2980b9;
+  }
+
+  .nav-pills > li[data-slide-to="3"].active a {
+    background-color: #8e44ad;
+  }
+  }
+  .article-tile {
+      background-color: #f0f0f5;
+  }
+  .space {
     margin-left: 20px;
 }
-set-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.tile-heading {
+    color: #31708f
 }
-.has-error,
-.has-success {
-    .form-control:focus {
-        box-shadow: none;
-    }
+ul li {
+    font-weight: normal;
+    list-style-position: inside;
+    list-style: none;
 }
-textarea.form-control {
-    height: auto !important;
+a {
+    padding-top: 15px;
 }
-.form-control {
-    -webkit-font-smoothing: antialiased;
-    -webkit-transition: border-color 0.3s ease-in-out;
-    -moz-transition: border-color 0.3s ease-in-out;
-    -o-transition: border-color 0.3s ease-in-out;
-    -ms-transition: border-color 0.3s ease-in-out;
-    transition: border-color 0.3s ease-in-out;
-    border-width: 1px;
-}
-
-.form-control:focus {
-    outline: none;
-    border-color: #009DF5;
-    border-width: 1px;
-    box-shadow: none;
-}
-//css for the social share side bar
-
-#contact-buttons-bar {
-  position: fixed;
-  top: 120px;
-  left: -50px;
-  width: 50px;
-}
-
-
-#contact-buttons-bar.slide-on-scroll {
-  position: absolute;
-}
-
-.contact-button-link  {
-  display: block;
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  margin-bottom: 1px;
-  text-align: center;
-  line-height: 50px;
-  font-size: 22px;
-  background: #8e8e93;
-  color: #fff;
-  position: relative;
-  left: 0;
-  
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  
-  -webkit-transition: all 250ms;
-     -moz-transition: all 250ms;
-          transition: all 250ms;
-}
-.contact-button-link:hover,
-.contact-button-link:focus,
-.contact-button-link:active {
-  color: #fff;
-  padding-left: 20px;
-  width: 70px;
-}
-.contact-button-link.cb-hidden {
-  left: -50px;
-}
-.contact-button-link.facebook {
-  background: #3b5998;
-}
-.contact-button-link.linkedin {
-  background: #0077b5;
-}
-.contact-button-link.gplus {
-  background: #db4437;
-}
-
-.contact-button-link.separated {
-  margin-top: 1em;
-}
-
-.show-hide-contact-bar,
-.contact-button-link.show-hide-contact-bar:focus,
-.contact-button-link.show-hide-contact-bar:active {
-  background: transparent;
-  color: #000;
-  border: 0;
-  outline: 0;
-  padding: 0;
-  width: 50px;
-}
-.contact-button-link.show-hide-contact-bar:hover {
-  color: #000;
-  background: #ccc;
-  padding: 0;
-  width: 50px;
+.left-style {
+    text-align: center;
 }

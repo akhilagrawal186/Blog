@@ -1,0 +1,47 @@
+<!-- <div class="container-fluid">
+<div class='col-sm-5 article-tile' ng-repeat="item in tiles track by $index" ng-class="{'col-sm-offset-1': ($index+1)%2 === 0}">
+  <div class="row">
+    <p class="text-warning"><b>{{item.date}}</b> Subscribers <span title="Rating"><i class="fa fa-star-half-empty fa-lg pull-right"></i><i class="fa fa-star fa-lg pull-right"></i><i class="fa fa-star fa-lg pull-right"></i><i class="fa fa-star fa-lg pull-right"></i><i class="fa fa-star fa-lg pull-right"></i></span></p>
+  </div>
+  <div class='row'>
+    <h4><a href="">{{item.title}}</a></h4>
+  </div>
+  <div class='row'>
+    <p>{{item.description}}</p>
+  </div>
+  <div class="row">
+    <div class="col-xs-4 col-md-4" title="Receba até 42 de Status">
+      <p class="text-center"><i class="glyphicon glyphicon-stats fa-2x tile-heading"></i><span class="badge">42</span></p>
+    </div>
+    <div class="col-xs-4 col-md-4" title="Ganhe até 3 Badges">
+      <p class="text-center"><i class="glyphicon glyphicon-fire fa-2x tile-heading"></i><span style class="badge"></span><span class="badge">3</span></p>
+    </div>
+    <div class="col-xs-4 col-md-4" title="Ganhe Certificado">
+      <p class="text-center"><i class="glyphicon glyphicon-file fa-2x tile-heading"></i><span class="badge">1</span></p>
+    </div>
+  </div>
+</div>
+</div> -->
+<div class="container-fluid">
+  <div class="col-sm-5 col-md-5" ng-repeat="item in tiles track by $index" ng-class="{'col-sm-offset-1': ($index+1)%2 === 0}">
+    <div class="thumbnail">
+      <div class="caption">
+          <p>{{item.date}}</p>
+          <p><span title="Rating"><i class="fa fa-star-half-empty fa-lg pull-right"></i><i class="fa fa-star fa-lg pull-right"></i><i class="fa fa-star fa-lg pull-right"></i><i class="fa fa-star fa-lg pull-right"></i><i class="fa fa-star fa-lg pull-right"></i></span></p>
+        <h3><a href="">{{item.title}}</a></h3>
+        <p>{{item.description}}</p>
+        <div class="row">
+          <div class="col-xs-4 col-md-4" title="Receba até 42 de Status">
+            <p class="text-center"><i class="glyphicon glyphicon-stats fa-2x tile-heading"></i><span class="badge">42</span></p>
+          </div>
+          <div class="col-xs-4 col-md-4" title="Ganhe até 3 Badges">
+            <p class="text-center"><i class="glyphicon glyphicon-fire fa-2x tile-heading"></i><span style class="badge"></span><span class="badge">3</span></p>
+          </div>
+          <div class="col-xs-4 col-md-4" title="Ganhe Certificado">
+            <p class="text-center"><i class="glyphicon glyphicon-file fa-2x tile-heading"></i><span class="badge">1</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
