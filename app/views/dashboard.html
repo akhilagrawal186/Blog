@@ -38,9 +38,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">
-        <!-- <img src="http://d2r8jqmejizzox.cloudfront.net/361456-853098-65x38-logofinal.png"> -->
-        AKHIL'S BLOG
+      <a  href="#">
+        <font size='6'>A</font>
+        <font size='5'>KHIL'S BLOG</font>&nbsp;
       </a>
     </div>
 
@@ -48,8 +48,8 @@
     <div class="navbar-collapse style= collapse in" id="bs-megadropdown-tabs" style="
     padding-left: 0px;">
       <ul class="nav navbar-nav">
-        <li><a href="#" ui-sref='dashboard.home'><i class="fa fa-globe"></i> HOME</a></li>
-        <li><a href="#" ui-sref='dashboard.about'><i class="fa fa-university"></i>ABOUT</a></li>
+        <li><a href="#" ui-sref='dashboard.home'><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+        <li><a href="#" ui-sref='dashboard.about'><i class="fa fa-user"></i>ABOUT</a></li>
 
         <li class="dropdown mega-dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-space-shuttle"></i> BLOG <span class="caret"></span></a>
@@ -62,22 +62,22 @@
                 <div class="tab-pane active" id="kids">
                   <ul class="nav-list list-inline">
                     <li>
-                      <a data-filter=".89" href="#"><img src="images/angularjs.png"><span>ANGULARJS</span></a>
+                      <a data-filter=".89" href="#"><img src="images/angularjs.png"><span></span></a>
                     </li>
                     <li>
-                      <a data-filter=".97" href="#"><img src="images/angular2.jpg"><span>ANGULAR2 </span></a>
+                      <a data-filter=".97" href="#"><img src="images/angular2.jpg"><span> </span></a>
                     </li>
                     <li>
-                      <a data-filter=".96" href="#"><img src="images/javascript.jpg"><span>JAVASCRIPT</span></a>
+                      <a data-filter=".96" href="#"><img src="images/javascript.jpg"><span></span></a>
                     </li>
                     <li>
-                      <a data-filter=".87" href="#"><img src="images/git.png"><span>GIT</span></a>
+                      <a data-filter=".87" href="#"><img src="images/git.png"><span></span></a>
                     </li>
                     <li>
-                      <a data-filter=".85" href="#"><img src="images/grunt.png"><span>GRUNT</span></a>
+                      <a data-filter=".85" href="#"><img src="images/grunt.png"><span></span></a>
                     </li>
                     <li>
-                      <a data-filter=".90" href="#"><img src="images/gulp.png"><span>GULP</span></a>
+                      <a data-filter=".90" href="#"><img src="images/gulp.png"><span></span></a>
                     </li>
                   </ul>
                 </div>
@@ -160,15 +160,16 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">SIGN IN <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign in <span class="caret"></span></a>
           <ul id="login-dp" class="dropdown-menu">
             <li>
               <div class="row">
                 <div class="col-md-12">
                   Login via
-                  <div class="social-buttons">
+                  <div>
+                      <!-- bjdvjd -->
                     <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                    <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                    <!-- <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a> -->
                   </div>
                   or
                   <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
@@ -179,7 +180,7 @@
                     <div class="form-group">
                       <label class="sr-only" for="exampleInputPassword2">Password</label>
                       <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required="">
-                      <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                      <div class="help-block text-right"><a href="">Forgot password ?</a></div>
                     </div>
                     <div class="form-group">
                       <button type="submit" class="btn btn-primary btn-block">Sign in</button>
@@ -205,30 +206,37 @@
   <!-- /.container-fluid -->
 </nav>
 <div class="row">
-    <div class="col-sm-2 left-style">
-        <a href=""><img src="images/yeoman.png" alt=""></a>
-        <div class="row">
-            <h4>Akhil Agrawal</h4>
-            <p>Web Developer</p>
-        </div>
-        <div class="row">
-            <!-- <i class="fa fa-twitter"></i> -->
-            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a>
-        </div>
-        <div class="row"><a href=""><i class="fa fa-github" aria-hidden="true"></i>GitHub</a></div>
-        <div class="row"><a href=""><i class="fa fa-stack-overflow" aria-hidden="true"></i>StackOverflow</a></div>
-        <div class="row"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></div>
-        <div class="row"><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i>Google+</a></div>
+  <div class="col-sm-2 left-style">
+    <a href=""><img class='img-circle img-responsive profile-set' src="images/profile.jpg" alt="" height='50px'></a>
+    <div class="row">
+      <h4>Akhil Agrawal</h4>
+      <p>Web Developer</p>
     </div>
-    <div class="col-sm-8">
+    <hr>
+    <div class="col-md-12">
+      <ul class="social-network social-circle">
+        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+  <div class="col-sm-8" id="recentPost">
     <div ui-view=""></div>
-    </div>
-    <div class="col-sm-2">
-        <ul>
-            <li ng-repeat= "item in tiles"><a href="">{{item.title}}</a></li>
-        </ul>
-    </div>
+  </div>
+  <div  class="col-sm-2">
+    <h3 class="heading-color">Recent Uploads</h3>
+    <ul>
+      <li ng-repeat="item in tiles"><a href="">{{item.title}}</a></li>
+    </ul>
+  </div>
 </div>
 <div class="row header-bgcolor left-style">
-@2016 AKhil Agrawal's Team
+  @2016 AKhil Agrawal's Team
 </div>

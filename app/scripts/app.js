@@ -42,5 +42,8 @@ angular
       templateUrl: 'views/angularjsTiles.html',
       controller: 'AngularjsTilesCtrl',
       controllerAs: 'angularjstiles'
-    });
+  }).state('dashboard.feature', {
+          url:'/feature',
+        templateUrl: 'views/articles/feature.html'
+      });
   }]);

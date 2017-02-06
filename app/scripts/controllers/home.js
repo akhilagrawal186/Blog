@@ -14,8 +14,6 @@ angular.module('practiceApp')
       'AngularJS',
       'Karma'
     ];
-    console.log("Comming");
-    $scope.abc = "akhil";
     $scope.tiles = [{
         'id':1,
         'title':'Feature',
@@ -87,4 +85,8 @@ angular.module('practiceApp')
         'date':'22-10-2016',
         'rating':4
     }];
+    $scope.divDesign = function(ind) {
+        console.log("Helloooo");
+        console.log(ind);
+    };
   });

@@ -9,13 +9,14 @@
  */
 angular.module('practiceApp')
   .controller('DashboardCtrl', function ($scope) {
+    //   var ref = $firebaseObject.database().ref();
+    //   $scope.name = $firebaseObject(ref);
+    //   console.log($scope.name);
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-    console.log("Comming");
-    $scope.abc = "akhil";
     $scope.tiles = [{
         'id':1,
         'title':'Feature Technology',
