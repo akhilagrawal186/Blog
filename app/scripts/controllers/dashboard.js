@@ -9,7 +9,8 @@
  */
 angular.module('practiceApp')
   .controller('DashboardCtrl', function ($scope) {
-    //   var ref = $firebaseObject.database().ref();
+    //   console.log(appFactory.get());
+    //   var ref = $firebaseObject.ref();
     //   $scope.name = $firebaseObject(ref);
     //   console.log($scope.name);
     this.awesomeThings = [
@@ -78,4 +79,7 @@ angular.module('practiceApp')
         'brief':'gdshjgdshgfdshvhdvhjfhfdbvhjdfv',
         'date':'22-10-2016'
     }];
+    // MyService.getData().then(function(response){
+    //     console.log(response);
+    // });
   });
